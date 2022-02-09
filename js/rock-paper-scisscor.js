@@ -1,6 +1,7 @@
 
 let computerSelection = computerPlay()
-const playerSelection = "rock";
+const playerSelection = window.prompt("Pick between Rock Paper or Scisscor").toLowerCase();
+
 
 for(let i = 0; i < 5 ; i++){
     computerSelection = computerPlay();
@@ -10,15 +11,15 @@ for(let i = 0; i < 5 ; i++){
 
 
 function computerPlay(){
-    const results = ["Rock", "Paper", "Scisscor"];
+    const results = ["rock", "paper", "scisscor"];
     var  result = Math.floor((Math.random() * 3) - .01);
     return results[result];
 }
 
 
-function playRound(playerSelection="", computerSelection=""){
-
-    if(!(playerSelection == "") && !(computerSelection =="")){
+function playRound(playerSelection, computerSelection=""){
+    const results = ["rock", "paper", "scisscor"];
+    if((results.includes(playerSelection)) && !(computerSelection =="")){
 
         playerSelection = playerSelection.toLowerCase()
         computerSelection = computerSelection.toLowerCase()
