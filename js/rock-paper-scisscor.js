@@ -92,7 +92,7 @@ function playRound(playerSelection, computerSelection=computerPlay()){
                     }else if(computerSelection === "rock"){
                         computerScore += 1;
                         return "It's a lose!"
-                    }else if(computerSelection === "scissor"){
+                    }else if(computerSelection === "paper"){
                         userScore += 1;
                         return "It's a win!"
                     }else{
