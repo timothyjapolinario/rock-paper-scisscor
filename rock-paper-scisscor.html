@@ -1,2 +1,24 @@
 <!DOCTYPE html>
-<script src = "./js/rock-paper-scisscor.js"></script>
+<head>
+    <script src = "./js/rock-paper-scisscor.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class = "header">Rock Paper Scissor</h1>
+    <h3 class = "header">Click one of the images below to play</h1>
+    <button id = "reset">RESET</button>
+    <div class = "option-list">
+        <img class ="option" id ="rock" src ="images/rock.png">
+        <img class ="option" id ="paper" src="images/paper.jpg">
+        <img class ="option" id ="scissor" src="images/scissor.jpeg">
+    </div>
+    <div class = "status">
+        <h2 id = "match">
+        </h2>
+        <h2 id = "current-score">
+        </h2>
+        <h2 id = surprise-text></h2>
+    </div>
+    
+</body>
+
